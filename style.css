@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    background-color: #ddd;
+}
+
+.container {
+    width: 100%;
+    max-width: 60rem;
+    padding: 2rem;
+    margin: 20px auto;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.todo-form {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3.5rem;
+}
+
+.todo-form input {
+    width: 45.8rem;
+    height: 4.6rem;
+    line-height: 4.6rem;
+    margin-right: 2rem;
+    padding: 0 15px;
+    border: 1px solid #B1B1B7;
+    border-radius: 5px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.todo-submit {
+    width: 12.2rem;
+    height: 4.6rem;
+    background-color: #7c8ae4;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: not-allowed;
+    transition: all 0.3s;
+}
+
+.task-list {
+    table-layout: fixed;
+    margin: auto;
+    width: 100%;
+    max-width: 60rem;
+    text-align: left;
+    border: none;
+    border-spacing: 0 1.5rem;
+}
+
+.task-list tr {
+    height: 6rem;
+    border: 1px solid #e5e5ea;
+    box-shadow: 0 6px 14px rgba(42, 42, 47, 0.076);
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+    transition: all 0.3s;
+}
+
+.task-list tr th span {
+    display: block;
+    height: 6rem;
+    line-height: 6rem;
+    background-color: #e5e5ea;
+    overflow: hidden;
+}
+
+.task-list tr th span, .task-list tr td {
+    padding-left: 1.5rem;
+}
+
+.task-list tr th:first-child span {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.task-list tr th:last-child span {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.task-list tr td {
+    border: none;
+    word-wrap: break-word;
+}
+
+.task-check {
+    font-size: 2rem;
+    padding: 0.2rem;
+    border: 2px solid #dbdade;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.checked {
+    background-color: #22d898;
+    border-color: #22d898;
+}
+
+.done {
+    text-decoration: line-through;
+    color: #999;
+}
+
+.edit-input {
+    height: 2rem;
+    padding: 0.2rem 0.5rem;
+    outline: none;
+    border: 2px solid #dbdade;
+    border-radius: 4px;
+}
+
+.edit-btn, .done-btn {
+    background-color: rgba(160, 83, 236, 0.2);
+    color: #a053ec;
+    width: 4rem;
+    height: 2.8rem;
+    line-height: 2.8rem;
+    margin-right: 8px;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.edit-btn:hover, .done-btn:hover {
+    background-color: #a053ec;
+    color: #fff;
+}
+
+.remove-btn {
+    background-color: rgba(241, 111, 111, 0.2);
+    color: #f16f6f;
+    width: 6.4rem;
+    height: 2.8rem;
+    line-height: 2.8rem;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.remove-btn:hover {
+    background-color: #f16f6f;
+    color: #fff;
+}
+
+.invisible {
+    display: none;
+}
+
+.active {
+    background-color: #475be2;
+    cursor: pointer;
+}
